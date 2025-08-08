@@ -1,0 +1,111 @@
+========= Threats Report =========
+
+ID: 101
+Base Severity: 70
+Response Time (hours): 5
+IP Address: 192.168.1.15
+Location: USA
+Type: DDoS
+Pre-Deformation %: 10
+Computed Severity: 87
+Status: Critical
+-------------------------
+ID: 102
+Base Severity: 40
+Response Time (hours): 3
+IP Address: 10.0.0.5
+Location: Germany
+Type: Malware
+Pre-Deformation %: 0
+Computed Severity: 55
+Status: Monitored
+-------------------------
+ID: 103
+Base Severity: 90
+Response Time (hours): 8
+IP Address: 172.16.4.22
+Location: China
+Type: Virus
+Pre-Deformation %: 20
+Computed Severity: 100
+Status: Critical
+-------------------------
+------------------------------
+Threats Sorted by ID:
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+ID: 102, Severity: 55, Hours: 3
+IP: 10.0.0.5, Type: Malware, Location: Germany, Status: Monitored
+ID: 103, Severity: 100, Hours: 8
+IP: 172.16.4.22, Type: Virus, Location: China, Status: Critical
+
+------------------------------
+Greedy Selection (Severity/Cost Ratio):
+Total Severity: 142, Hours Used: 8
+Chosen Threats:
+ID: 102, Severity: 55, Hours: 3
+IP: 10.0.0.5, Type: Malware, Location: Germany, Status: Monitored
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+
+------------------------------
+Dynamic Programming Optimization:
+Max Severity: 187, Hours Used: 13
+Chosen Threats:
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+ID: 103, Severity: 100, Hours: 8
+IP: 172.16.4.22, Type: Virus, Location: China, Status: Critical
+
+------------------------------
+Threats Sorted by ID:
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+ID: 102, Severity: 55, Hours: 3
+IP: 10.0.0.5, Type: Malware, Location: Germany, Status: Monitored
+ID: 103, Severity: 100, Hours: 8
+IP: 172.16.4.22, Type: Virus, Location: China, Status: Critical
+
+------------------------------
+Greedy Selection (Severity/Cost Ratio):
+Total Severity: 142, Hours Used: 8
+Chosen Threats:
+ID: 102, Severity: 55, Hours: 3
+IP: 10.0.0.5, Type: Malware, Location: Germany, Status: Monitored
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+
+------------------------------
+Dynamic Programming Optimization:
+Max Severity: 187, Hours Used: 13
+Chosen Threats:
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+ID: 103, Severity: 100, Hours: 8
+IP: 172.16.4.22, Type: Virus, Location: China, Status: Critical
+
+------------------------------
+Top 2 Most Severe Threats:
+ID: 103, Severity: 100, Hours: 8
+IP: 172.16.4.22, Type: Virus, Location: China, Status: Critical
+ID: 101, Severity: 87, Hours: 5
+IP: 192.168.1.15, Type: DDoS, Location: USA, Status: Critical
+
+------------------------------
+Search Results for IP: 10.0.0.5
+ID: 102, Severity: 55, Hours: 3
+Type: Malware, Location: Germany, Status: Monitored
+
+------------------------------
+Threat Counts by Type:
+DDoS: 1
+Malware: 1
+Virus: 1
+
+------------------------------
+System Summary:
+Total Threats: 3
+Total Response Hours Needed: 16
+Total Severity Score: 242
+Available Response Hours: 15
+
